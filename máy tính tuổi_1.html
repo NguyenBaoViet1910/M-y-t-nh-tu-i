@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mays tính tuổi</title>
+  <style>
+    .khung {
+      width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #444;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="khung">
+    <h2>Máy tính tuổi thông minh</h2>
+
+    <label>Nhập số tuổi của bạn:</label><br>
+    <input type="number" id="soNhap"><br><br>
+
+    <button onclick="inSo()">Xác nhận</button>
+
+    <h3>Kết quả:</h3>
+    <p id="ketQua"></p>
+  </div>
+
+  <script>
+    function inSo() {
+      let so = document.getElementById("soNhap").value;
+      document.getElementById("ketQua").innerText = "Bạn đã " + so + " tuổi rồi";
+    }
+  </script>
+
+</body>
+</html>
