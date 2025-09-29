@@ -2,10 +2,12 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Mays tính tuổi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính toán JS</title>
   <style>
     .khung {
-      width: 300px;
+      max-width: 350px;  /* Giới hạn rộng tối đa */
+      width: 90%;        /* Co giãn theo màn hình */
       margin: 40px auto;
       padding: 20px;
       border: 2px solid #444;
@@ -13,6 +15,18 @@
       background-color: #f9f9f9;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 10px;
+      cursor: pointer;
     }
   </style>
 </head>
